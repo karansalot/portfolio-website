@@ -1,0 +1,78 @@
+import { motion } from "framer-motion";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import { styles } from "../styles";
+import { SectionWrapper } from "../hoc";
+import { galleryImages } from "../constants";
+import { textVariant } from "../utils/motion";
+
+const Gallery = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
+
+    return (
+        <>
+            <motion.div variants={textVariant(0.1)}>
+                <p className={styles.sectionSubText}>My World</p>
+                <h2 className={styles.sectionHeadText}>Gallery.</h2>
+            </motion.div>
+
+            <div className="w-full mt-10">
+                <Slider {...settings} className="gallery-slider">
+                    {galleryImages.map((img, index) => (
+                        <div key={index} className="px-2 focus:outline-none">
+                            <div className="w-full h-[400px] rounded-2xl overflow-hidden cursor-pointer">
+                                <img
+                                    src={img}
+                                    alt={`gallery-${index}`}
+                                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                                />
+                            </div>
+                        </div>
+                    ))}
+                </Slider>
+            </div>
+
+            <style>{`
+                .slick-dots li button:before {
+                    color: white;
+                }
+                .slick-dots li.slick-active button:before {
+                    color: #A259FF;
+                }
+                .slick-prev:before, .slick-next:before {
+                    color: #A259FF;
+                }
+            `}</style>
+        </>
+    );
+};
+
+export default SectionWrapper(Gallery, "gallery");
