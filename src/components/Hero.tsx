@@ -3,7 +3,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Image from 'next/image';
 import { useRef } from 'react';
-import { Linkedin, Github, BookOpen, BarChart2, GraduationCap, Mail } from 'lucide-react';
+import { Linkedin, Github, BookOpen, BarChart2, GraduationCap, Mail, Twitter } from 'lucide-react';
 
 export default function Hero() {
     const ref = useRef(null);
@@ -103,6 +103,9 @@ export default function Hero() {
                     </a>
                     <a href="https://github.com/karansalot" target="_blank" className="flex items-center gap-2 text-zinc-300 hover:text-savannah-400 transition-colors bg-white/5 hover:bg-white/10 px-4 py-2 rounded-full border border-white/10">
                         <Github className="w-5 h-5" /><span className="text-sm font-medium">GitHub</span>
+                    </a>
+                    <a href="https://x.com/karan_salot" target="_blank" className="flex items-center gap-2 text-zinc-300 hover:text-savannah-400 transition-colors bg-white/5 hover:bg-white/10 px-4 py-2 rounded-full border border-white/10">
+                        <Twitter className="w-5 h-5" /><span className="text-sm font-medium">Twitter</span>
                     </a>
                     <a href="https://medium.com/@salotkaran" target="_blank" className="flex items-center gap-2 text-zinc-300 hover:text-savannah-400 transition-colors bg-white/5 hover:bg-white/10 px-4 py-2 rounded-full border border-white/10">
                         <BookOpen className="w-5 h-5" /><span className="text-sm font-medium">Medium</span>
