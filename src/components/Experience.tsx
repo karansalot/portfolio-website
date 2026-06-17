@@ -6,6 +6,46 @@ import { useState } from 'react';
 
 const experiences = [
     {
+        id: "uacc",
+        type: "work",
+        title: "Program Coordinator, COHC and IMHO",
+        company: "University of Arizona Comprehensive Cancer Center",
+        location: "Tucson, AZ · Hybrid",
+        period: "Mar 2026 – Present",
+        image: "/images/uacc%20logo.png",
+        story: (
+            <div className="space-y-6">
+                <p>
+                    I support program operations across COHC and IMHO initiatives, with a focus on making the day-to-day work easier to track, coordinate, and improve. A lot of my role sits where people, data, and technology meet.
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                        <p className="text-sm font-semibold text-white">Data systems</p>
+                        <p className="mt-2 text-sm leading-relaxed text-zinc-300">Manage program data in REDCap and Trellis CRM for participant tracking, events, and communications.</p>
+                    </div>
+                    <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                        <p className="text-sm font-semibold text-white">Reporting</p>
+                        <p className="mt-2 text-sm leading-relaxed text-zinc-300">Build reports and dashboards that help teams monitor engagement, outcomes, and workflow health.</p>
+                    </div>
+                    <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                        <p className="text-sm font-semibold text-white">Program insight</p>
+                        <p className="mt-2 text-sm leading-relaxed text-zinc-300">Analyze trends and translate findings into practical next steps for clinicians, researchers, and program teams.</p>
+                    </div>
+                    <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                        <p className="text-sm font-semibold text-white">Better coordination</p>
+                        <p className="mt-2 text-sm leading-relaxed text-zinc-300">Streamline processes so community-facing work can scale without losing the participant experience.</p>
+                    </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="/images/uacc%20logo.png" alt="University of Arizona Cancer Center" className="h-20 w-full rounded-xl bg-white object-contain p-3" />
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="/images/nci%20uacc.png" alt="NCI Comprehensive Cancer Center designation" className="h-20 w-full rounded-xl bg-white object-contain p-3" />
+                </div>
+            </div>
+        )
+    },
+    {
         id: "freedom-center",
         type: "work",
         title: "Research Analyst",
@@ -13,7 +53,7 @@ const experiences = [
         location: "Tucson, AZ",
         period: "Jan 2025 – Dec 2025",
         image: "/images/freedom_center_horizontal_logo.png",
-        story: "Working with Dr. Mary Rigdon (Director of Center for Philosophy of Freedom), my mission was to completely rethink how we understand user engagement. I leveraged Qualtrics for user surveys, but separately built a fully custom robust AI-driven behavioral research platform from scratch. By diving deep into stakeholder interviews, I was able to pinpoint exactly what we needed. I designed automated ETL pipelines using Python and SQL to handle data processing. Bringing this data to life through custom Power BI dashboards and a newly developed financial analytics application was incredibly rewarding, especially when it successfully drove significant increases in participant retention through our data-driven, strategic decisions."
+        story: "At the Freedom Center, I worked with Dr. Mary Rigdon on better ways to understand engagement in behavioral economics research. I supported surveys in Qualtrics, helped shape stakeholder interviews, and built data workflows in Python and SQL so the team could spend less time cleaning data and more time learning from it. The work eventually turned into dashboards and internal tools that made participant patterns easier to see and act on."
     },
     {
         id: "ua-ta",
@@ -23,17 +63,17 @@ const experiences = [
         location: "Tucson, AZ",
         period: "Jan 2025 – Dec 2025",
         image: "/images/ua_logo_official.png",
-        story: "Teaching has always been a way for me to solidify my own understanding while helping others grow. Working under Dr. Nikolas Hodge (Director of Implementation Services, UITS), I stepped into the role of mentoring over 60 students, delivering hands-on training on Agile methodology, requirements gathering, SQL optimization, and data analysis. I poured my energy into developing comprehensive course materials and custom analytics applications to support the curriculum. The most fulfilling part was guiding project teams through their challenges, which ultimately resulted in a 30% measurable improvement in their final deliverables."
+        story: "Teaching helped me get clearer about my own thinking while helping students build confidence with systems work. Under Dr. Nikolas Hodge, I mentored more than 60 students across Agile methods, requirements gathering, SQL, and data analysis. I also developed course materials and small analytics tools that helped project teams move from vague ideas to cleaner final deliverables."
     },
     {
         id: "ua-tech",
         type: "work",
-        title: "Strategy Analyst",
+        title: "Strategy Analyst (Live Client Project)",
         company: "Eller College of Management, University of Arizona",
         location: "Tucson, AZ",
         period: "Jan 2025 – May 2025",
         image: "/images/ua_logo_official.png",
-        story: "In my consulting role for Eller College of Management's marketing department, I conducted a comprehensive brand audit for the undergraduate marketing program. By analyzing stakeholder feedback and market positioning, I identified core improvement areas. I developed a detailed SWOT analysis and formulated strategic recommendations to enhance brand positioning and communication strategy. Engaging with stakeholders through targeted surveys and interviews, while benchmarking competitor data, allowed us to outline specific pathways to enhance the program's visibility and overall market presence."
+        story: "I worked with Eller's marketing team on a brand audit for the undergraduate marketing program. The project combined stakeholder interviews, survey feedback, competitor research, and a practical SWOT analysis. The final recommendations focused on clearer positioning and communication choices the team could actually use."
     },
     {
         id: "mhhc",
@@ -43,7 +83,7 @@ const experiences = [
         location: "Remote (Tucson, AZ)",
         period: "Aug 2024 – Dec 2024",
         image: "/images/mhhc_logo_official.png",
-        story: "As part of an intensive academic consulting project, I served as a Business Analyst for our live client, MHHC Enterprises. I operated as the critical bridge between technical execution and business needs during an enterprise system integration. My team and I developed scalable B2B and B2C systems. We designed comprehensive ERDs, wrote complex SQL triggers, and architected the underlying databases. To bring the backend to life, we developed a robust frontend application using Oracle, greatly streamlining how the client interacted with their data."
+        story: "For MHHC Enterprises, I worked as a business analyst on a live client systems project. My role was to translate business needs into clear technical requirements while the team designed B2B and B2C workflows. We built ERDs, wrote SQL triggers, shaped the database design, and created an Oracle-based frontend that made the client data easier to use."
     },
     {
         id: "happy-hunters",
@@ -53,7 +93,7 @@ const experiences = [
         location: "Mumbai, India",
         period: "Jan 2023 – Aug 2024",
         image: "/images/happy_hunters_logo_official.png",
-        story: "Joining Happy Hunters as the Founding Product Analyst was an incredible opportunity to shape the product from the ground up. Partnering directly with the founders, I defined the product strategy and roadmap heavily based on direct user research. I architected SQL databases and robust ETL pipelines from scratch, processing tens of thousands of records and eliminating 70% of manual operations. But the real game-changer was building a machine learning recommendation engine using Python. By analyzing behavioral data and predicting customer needs, those personalization strategies skyrocketed our lead conversion by 57%."
+        story: "As the founding product analyst at Happy Hunters, I helped turn early product ideas into working systems. I partnered with the founders on roadmap decisions, user research, SQL databases, and ETL workflows. I also built a Python recommendation model that helped personalize travel leads and reduce a large amount of manual operations."
     },
     {
         id: "djs-beats",
@@ -63,7 +103,7 @@ const experiences = [
         location: "Mumbai, India",
         period: "Apr 2021 – Oct 2023",
         image: "/images/djs_beats_logo_official.png",
-        story: "Music and leadership collide at DJS Beats, where I spent over two years growing from an Artist and Events Executive to Vice Chairperson. I directed grand-scale events, managed logistics, and poured my creative energy into performing. This experience was instrumental in honing my team management skills and adaptability, proving to me that balancing technical rigor with creative passion is entirely possible when you move fast and embrace the rhythm."
+        story: "DJS Beats was where music, logistics, and leadership all came together for me. I grew from artist and events executive to vice chairperson, helping run large events, manage teams, and perform along the way. It taught me how to stay calm when plans change and how much good coordination matters behind the scenes."
     },
     {
         id: "dj-codestars",
@@ -73,7 +113,7 @@ const experiences = [
         location: "Mumbai, India",
         period: "Sep 2021 – Sep 2023",
         image: "/images/dj_codestars_logo_official.png",
-        story: "At DJ CodeStars, I stepped up as Project Coordinator to foster a thriving technical community. I crafted and contributed numerous articles on emerging technologies—ranging from AI and Machine Learning to Blockchain and Data Analytics. My core focus was educating and engaging our coding community by meticulously managing publication schedules and ensuring we always delivered top-tier content that met our audience's evolving needs."
+        story: "At DJ CodeStars, I helped keep a student technical community active and useful. I coordinated article schedules, contributed writing on AI, machine learning, blockchain, and analytics, and worked with peers to make technical topics feel more approachable."
     },
     {
         id: "grace-hopper",
@@ -130,7 +170,7 @@ export default function Experience() {
                             <div className={`relative w-12 h-12 shrink-0 rounded-lg flex items-center justify-center overflow-hidden border transition-colors ${activeId === exp.id ? 'bg-zinc-900 border-zinc-700' : 'bg-zinc-900/50 border-zinc-800'
                                 }`}>
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img src={exp.image} alt={exp.company} className={`w-full h-full opacity-100 relative z-10 ${exp.id === 'freedom-center' ? 'p-1 bg-white rounded-lg object-contain' : 'p-2 object-contain'}`} onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                                <img src={exp.image} alt={exp.company} className={`w-full h-full opacity-100 relative z-10 ${exp.id === 'freedom-center' || exp.id === 'uacc' ? 'p-1 bg-white rounded-lg object-contain' : 'p-2 object-contain'}`} onError={(e) => { e.currentTarget.style.display = 'none'; }} />
                                 {exp.type === 'work' ? (
                                     <Briefcase className="absolute inset-0 m-auto opacity-20 w-5 h-5 pointer-events-none z-0" />
                                 ) : (
@@ -180,9 +220,15 @@ export default function Experience() {
                             </div>
 
                             <div className="prose prose-invert max-w-none">
-                                <p className="text-zinc-100 leading-relaxed md:leading-loose text-base md:text-lg text-justify">
-                                    {activeExp.story}
-                                </p>
+                                {typeof activeExp.story === "string" ? (
+                                    <p className="text-zinc-100 leading-relaxed md:leading-loose text-base md:text-lg">
+                                        {activeExp.story}
+                                    </p>
+                                ) : (
+                                    <div className="text-zinc-100 leading-relaxed text-base md:text-lg">
+                                        {activeExp.story}
+                                    </div>
+                                )}
                             </div>
                         </motion.div>
                     </AnimatePresence>

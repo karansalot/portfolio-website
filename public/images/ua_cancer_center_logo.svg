@@ -1,0 +1,19 @@
+<svg width="1100" height="250" viewBox="0 0 1100 250" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">University of Arizona Cancer Center</title>
+  <desc id="desc">University of Arizona block A mark, divider, and Cancer Center wordmark.</desc>
+  <rect width="1100" height="250" fill="#FFFFFF"/>
+
+  <g transform="translate(60 38)">
+    <path d="M82 0L164 174H123L109 141H55L41 174H0L82 0Z" fill="#0C234B"/>
+    <path d="M82 30L139 158H113L101 130H63L51 158H25L82 30Z" fill="#AB0520"/>
+    <path d="M70 101H94L82 71L70 101Z" fill="#FFFFFF"/>
+    <path d="M23 174V145H141V174H23Z" fill="#0C234B"/>
+    <path d="M44 145H120V158H44V145Z" fill="#FFFFFF"/>
+    <path d="M33 15H131V45H108V35H56V45H33V15Z" fill="#0C234B"/>
+    <path d="M45 27H119V35H45V27Z" fill="#FFFFFF"/>
+  </g>
+
+  <rect x="255" y="42" width="4" height="166" rx="2" fill="#13294B"/>
+
+  <text x="315" y="146" fill="#13294B" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="500">Cancer Center</text>
+</svg>

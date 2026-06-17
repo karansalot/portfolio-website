@@ -5,6 +5,9 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const photos = [
+    { src: "/images/personal.jpeg", alt: "Portrait on the University of Arizona campus" },
+    { src: "/images/DSCF5942.jpeg", alt: "Hack Arizona community photo" },
+    { src: "/images/hackaz%20new.png", alt: "Hack Arizona Social Innovation Track" },
     { src: "/images/grad_ceremony.jpg", alt: "Graduation Ceremony" },
     { src: "/images/chicago_board_of_trade.jpg", alt: "University of Arizona Campus" },
     { src: "/images/grad_fountain.jpg", alt: "Graduation Fountain" },

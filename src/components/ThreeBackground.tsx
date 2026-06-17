@@ -3,14 +3,15 @@
 import { useRef, useMemo } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Points, PointMaterial } from '@react-three/drei';
+import * as THREE from 'three';
 
-
-function Stars(props: any) {
-    const ref = useRef<any>(null);
+function Stars() {
+    const ref = useRef<THREE.Points>(null);
     const [sphere] = useMemo(() => {
         const positions = new Float32Array(5000 * 3);
         for (let i = 0; i < 5000 * 3; i++) {
-            positions[i] = (Math.random() - 0.5) * 3;
+            const pseudoRandom = Math.sin(i * 12.9898) * 43758.5453;
+            positions[i] = (pseudoRandom - Math.floor(pseudoRandom) - 0.5) * 3;
         }
         return [positions];
     }, []);
@@ -24,7 +25,7 @@ function Stars(props: any) {
 
     return (
         <group rotation={[0, 0, Math.PI / 4]}>
-            <Points ref={ref} positions={sphere} stride={3} frustumCulled={false} {...props}>
+            <Points ref={ref} positions={sphere} stride={3} frustumCulled={false}>
                 <PointMaterial
                     transparent
                     color="#ffce33"

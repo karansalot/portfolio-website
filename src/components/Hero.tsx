@@ -56,7 +56,7 @@ export default function Hero() {
             {/* Content */}
             <motion.div
                 style={{ y: yText, opacity }}
-                className="relative z-20 text-center px-6 md:px-12 py-10 max-w-4xl mx-auto flex flex-col items-center mt-12 md:mt-24 backdrop-blur-md bg-black/40 border border-white/10 rounded-3xl shadow-2xl"
+                className="relative z-20 text-center px-6 md:px-12 py-10 max-w-4xl mx-auto flex flex-col items-center mt-12 md:mt-24"
             >
                 <motion.h1
                     initial={{ opacity: 0, y: 20 }}
@@ -83,8 +83,8 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.5 }}
                     className="max-w-2xl mx-auto mb-10 px-4"
                 >
-                    <p className="text-zinc-100 text-sm md:text-base font-light leading-relaxed drop-shadow-md text-justify">
-                        I am a recent masters in management information systems graduate currently based in the United States, deeply passionate about researching and solving ambiguous problems to build impactful products. When I'm not driving product strategy, you can find me playing my guitars, competing in hackathons, attending conferences, or geeking out over wildlife, sports, and geopolitics.
+                    <p className="text-zinc-100 text-sm md:text-base font-light leading-relaxed drop-shadow-md">
+                        I am a recent masters in management information systems graduate currently based in the United States, deeply passionate about researching and solving ambiguous problems to build impactful products. When I&apos;m not driving product strategy, you can find me playing my guitars, competing in hackathons, attending conferences, or geeking out over wildlife, sports, and geopolitics.
                     </p>
                 </motion.div>
 

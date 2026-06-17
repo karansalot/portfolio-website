@@ -1,12 +1,11 @@
 'use client';
 
 import { motion, AnimatePresence } from 'framer-motion';
-import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 const funFacts = [
     {
-        src: "/images/lion-hero.png",
+        src: "/images/lion-hero.jpg",
         title: "WILDLIFE FANATIC",
         fact: "I absolutely love wildlife documentaries. Ask me about the lions in the Maasai Mara, but only if you have an hour to spare."
     },
@@ -50,27 +49,31 @@ export default function About() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
-                        Curious builder at the intersection of <span className="text-transparent bg-clip-text bg-gradient-to-r from-savannah-400 to-savannah-200">technology, data, and users.</span>
+                        I like turning messy problems into <span className="text-transparent bg-clip-text bg-gradient-to-r from-savannah-400 to-savannah-200">clearer systems.</span>
                     </h2>
 
-                    <div className="bg-zinc-900/40 border border-white/10 rounded-3xl p-8 backdrop-blur-sm shadow-2xl">
+                    <div className="bg-zinc-900/40 border border-white/10 rounded-2xl p-8 backdrop-blur-sm shadow-2xl">
                         <div className="prose prose-invert max-w-none">
-                            <p className="text-zinc-100 text-base md:text-lg leading-relaxed md:leading-loose text-justify font-normal mb-6">
-                                I am a recent Master's in Management Informations Systems (Dec 2025) graduate based in the United States, deeply passionate about researching and solving ambiguous problems. From leading school councils as president to directing grand-scale music events, my journey has always been about bringing people together. I hold a Master's in MIS from the University of Arizona, but my real education comes from diving into complex business challenges, whether that's analyzing how people behave in behavioral economic experiments, or figuring out how to make a cross-chain blockchain bot work during a frantic 48-hour hackathon.
+                            <p className="text-zinc-100 text-base md:text-lg leading-relaxed md:leading-loose font-normal mb-6">
+                                I am a Management Information Systems graduate from the University of Arizona, now working as a Program Coordinator for COHC and IMHO at the University of Arizona Comprehensive Cancer Center. Most of my work lives in the practical middle: data systems, reporting, participant workflows, and the small process decisions that make a team easier to run.
                             </p>
-                            <p className="text-zinc-100 text-base md:text-lg leading-relaxed md:leading-loose text-justify font-normal mb-6">
-                                I honestly believe that building great tech is a lot like making music. You start with different instruments, data, code, user psychology and if you orchestrate them correctly, you create something that resonates with people. Plus, if you give me a messy dataset, I'll probably find a way to turn it into a shiny dashboard. It's a bit of an obsession!
+                            <p className="text-zinc-100 text-base md:text-lg leading-relaxed md:leading-loose font-normal mb-6">
+                                Before that, I worked across behavioral economics research, product analytics, teaching, live-client consulting, and hackathon builds. I like projects where the question is still a little fuzzy at the beginning, because that is usually where research, product judgment, and good communication matter most.
                             </p>
-                            <p className="text-zinc-100 text-base md:text-lg leading-relaxed md:leading-loose text-justify font-normal">
-                                I am an incredibly flexible and adaptable individual; my youth is my biggest asset because I thrive on growing fast and taking on any new challenge thrown my way. When I unplug, I'm usually shouting at the TV supporting the Indian Cricket Team or enthusiastically ice skating.
+                            <p className="text-zinc-100 text-base md:text-lg leading-relaxed md:leading-loose font-normal">
+                                When I unplug, I&apos;m usually shouting at the TV supporting the Indian Cricket Team, enthusiastically playing guitar, watching wildlife documentaries, or skating.
                             </p>
                         </div>
                     </div>
 
                     <div className="pt-6 border-t border-white/10 flex flex-wrap items-center gap-6">
                         <div className="text-sm text-savannah-100/60 font-mono">
-                            <p className="hover:text-savannah-400 transition-colors">karansalot10@gmail.com</p>
-                            <p className="hover:text-savannah-400 transition-colors mt-2">karan20@arizona.edu</p>
+                            <a href="mailto:karansalot10@gmail.com" className="block hover:text-savannah-400 transition-colors">
+                                karansalot10@gmail.com
+                            </a>
+                            <a href="mailto:karansalot10@gmail.com" className="block hover:text-savannah-400 transition-colors mt-2">
+                                karan20@arizona.edu
+                            </a>
                         </div>
                     </div>
                 </motion.div>
@@ -92,12 +95,11 @@ export default function About() {
                             transition={{ duration: 0.8 }}
                             className="absolute inset-0"
                         >
-                            <Image
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
                                 src={funFacts[currentFact].src}
                                 alt={funFacts[currentFact].title}
-                                fill
-                                className="object-cover object-center"
-                                sizes="(max-width: 1024px) 100vw, 50vw"
+                                className="h-full w-full object-cover object-center"
                             />
                         </motion.div>
                     </AnimatePresence>

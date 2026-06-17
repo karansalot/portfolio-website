@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Mail, Linkedin, Github, FileText, Phone } from 'lucide-react';
+import { Mail, Linkedin, Github, FileText } from 'lucide-react';
 
 export default function Contact() {
     return (
@@ -15,7 +15,7 @@ export default function Contact() {
                     viewport={{ once: true }}
                     className="text-4xl md:text-5xl font-heading font-bold text-savannah-500 mb-8"
                 >
-                    Let's Start a New Adventure
+                    Let&apos;s Start a New Adventure
                 </motion.h2>
 
                 <p className="text-xl text-gray-300 mb-12">

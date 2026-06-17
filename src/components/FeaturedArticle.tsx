@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ExternalLink, ArrowRight } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 export default function FeaturedArticle() {
     return (
@@ -51,32 +51,17 @@ export default function FeaturedArticle() {
                     </div>
 
                     {/* Image Section */}
-                    <div className="md:w-1/3 relative min-h-[300px] bg-zinc-800 flex flex-col sm:flex-row md:flex-col">
-                        <div className="relative w-full h-1/2 min-h-[150px] border-b sm:border-b-0 sm:border-r md:border-b md:border-r-0 border-white/10 group/img1 overflow-hidden">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img
-                                src="/images/medium-1.jpg"
-                                alt="HackIllinois 2026 Group"
-                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/img1:scale-105"
-                                onError={(e) => {
-                                    e.currentTarget.src = "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80";
-                                    e.currentTarget.onerror = null;
-                                }}
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
-                        </div>
-                        <div className="relative w-full h-1/2 min-h-[150px] group/img2 overflow-hidden">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img
-                                src="/images/medium-2.jpg"
-                                alt="Fulcrum GT Banner"
-                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover/img2:scale-105"
-                                onError={(e) => {
-                                    e.currentTarget.src = "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80";
-                                    e.currentTarget.onerror = null;
-                                }}
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+                    <div className="md:w-1/3 relative min-h-[320px] bg-zinc-800 overflow-hidden group/img">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                            src="/images/hackillinois.png"
+                            alt="HackIllinois 2026 project team"
+                            className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover/img:scale-105"
+                            onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-black/10 pointer-events-none" />
+                        <div className="absolute bottom-4 left-4 rounded-full border border-white/15 bg-black/55 px-4 py-2 text-sm font-semibold text-white backdrop-blur">
+                            HackIllinois 2026
                         </div>
                     </div>
                 </div>

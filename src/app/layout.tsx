@@ -1,18 +1,5 @@
 import type { Metadata } from 'next';
-import { Outfit, Playfair_Display } from 'next/font/google';
 import './globals.css';
-
-const outfit = Outfit({
-  subsets: ['latin'],
-  variable: '--font-outfit',
-  display: 'swap',
-});
-
-const playfair = Playfair_Display({
-  subsets: ['latin'],
-  variable: '--font-playfair',
-  display: 'swap',
-});
 
 export const metadata: Metadata = {
   title: 'Karan Salot | Product Manager, Data & Business Analyst',
@@ -41,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${outfit.variable} ${playfair.variable}`}>
+    <html lang="en">
       <body className="antialiased bg-background text-foreground overflow-x-hidden w-full">
         {children}
       </body>

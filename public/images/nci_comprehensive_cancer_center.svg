@@ -1,0 +1,16 @@
+<svg width="860" height="300" viewBox="0 0 860 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">NCI Comprehensive Cancer Center</title>
+  <desc id="desc">NCI Comprehensive Cancer Center designation badge.</desc>
+  <rect width="860" height="300" fill="#FFFFFF"/>
+  <g transform="translate(54 34)">
+    <rect x="0" y="0" width="604" height="148" fill="#FFFFFF" stroke="#0B8198" stroke-width="5"/>
+    <path d="M4 4H210L168 144H4V4Z" fill="#FFFFFF"/>
+    <path d="M210 4H600V144H168L210 4Z" fill="#087D96"/>
+    <text x="36" y="94" fill="#C9164A" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800">NCI</text>
+    <text x="252" y="62" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700">Comprehensive</text>
+    <text x="252" y="111" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700">Cancer Center</text>
+
+    <text x="302" y="208" fill="#52525B" font-family="Arial, Helvetica, sans-serif" font-size="27" text-anchor="middle">A Cancer Center Designated by the</text>
+    <text x="302" y="244" fill="#52525B" font-family="Arial, Helvetica, sans-serif" font-size="27" text-anchor="middle">National Cancer Institute</text>
+  </g>
+</svg>

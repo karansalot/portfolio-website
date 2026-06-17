@@ -33,7 +33,7 @@ export default function TrendingNews() {
             <div className="flex items-center gap-3 mb-8">
                 <TrendingUp className="text-savannah-500" size={28} />
                 <h3 className="text-2xl md:text-3xl font-bold text-white">
-                    What I'm Reading
+                    What I&apos;m Reading
                 </h3>
             </div>
 

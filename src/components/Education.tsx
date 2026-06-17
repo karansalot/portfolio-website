@@ -183,9 +183,15 @@ export default function Education() {
                             </div>
 
                             <div className="prose prose-invert max-w-none">
-                                <p className="text-zinc-100 leading-relaxed md:leading-loose text-base md:text-lg text-justify">
-                                    {activeEdu.story}
-                                </p>
+                                {typeof activeEdu.story === "string" ? (
+                                    <p className="text-zinc-100 leading-relaxed md:leading-loose text-base md:text-lg">
+                                        {activeEdu.story}
+                                    </p>
+                                ) : (
+                                    <div className="text-zinc-100 leading-relaxed md:leading-loose text-base md:text-lg">
+                                        {activeEdu.story}
+                                    </div>
+                                )}
                             </div>
                         </motion.div>
                     </AnimatePresence>

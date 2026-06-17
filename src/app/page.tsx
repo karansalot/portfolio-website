@@ -1,6 +1,7 @@
 import ThreeBackground from '@/components/ThreeBackground';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
+import VisitorCompass from '@/components/VisitorCompass';
 import Education from '@/components/Education';
 import Experience from '@/components/Experience';
 import Projects from '@/components/Projects';
@@ -16,6 +17,7 @@ export default function Home() {
 
       <div className="relative z-10 space-y-20 pb-20">
         <About />
+        <VisitorCompass />
         <Education />
         <Experience />
         <Projects />
